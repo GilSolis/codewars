@@ -18,7 +18,7 @@
             console.log(wordOne, wordTwo)
             arr[0] = arr[0].replace(wordOne, wordTwo)
             arr[1] = arr[1].replace(wordTwo, wordOne)
-            console.log(arr.join(' '))
+            return arr.join(' ')
         }
         spoonerize('help me')
 

@@ -11,8 +11,16 @@
 <body>
 
     <script>
-
-
+        function spoonerize(words) {
+            let arr = words.split(' ')
+            wordOne = arr[0].substr(0, 1)
+            wordTwo = arr[1].substr(0, 1)
+            console.log(wordOne, wordTwo)
+            arr[0] = arr[0].replace(wordOne, wordTwo)
+            arr[1] = arr[1].replace(wordTwo, wordOne)
+            console.log(arr.join(' '))
+        }
+        spoonerize('help me')
 
     </script>
 </body>

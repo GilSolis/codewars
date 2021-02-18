@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function divCon(x) {
+            totalStr = 0
+            totalInt = 0
+            let newStrArr = []
+            let newIntArr = []
+            for (let i = 0; i < x.length; i++) {
+                if (typeof x[i] === 'string') {
+                    totalStr = totalStr + Number(x[i])
+                } else if (typeof x[i] === 'number') {
+                    totalInt = totalInt + x[i]
+                }
+            }
+            return totalStr - totalInt
+        }
+
+        // divCon([1, '2', 3, '4', 5])
+
+    </script>
+</body>
+
+</html>

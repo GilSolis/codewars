@@ -16,6 +16,7 @@
     <script>
         function crap(x, bags, cap) {
             let hasDog = false
+            let totalCap = bags * cap
             let fullBags = 0
             for (let i = 0; i < x.length; i++) {
                 if (x[i].includes('D')) {
@@ -26,7 +27,7 @@
             }
             if (hasDog === true) {
                 return "Dog!!"
-            } else if (fullBags > cap) {
+            } else if (fullBags > totalCap) {
                 return "Cr@p"
             } else {
                 return "Clean"

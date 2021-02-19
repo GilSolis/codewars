@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        function crap(x, bags, cap) {
+            let hasDog = false
+            let fullBags = 0
+            for (let i = 0; i < x.length; i++) {
+                if (x[i].includes('D')) {
+                    hasDog = true
+                } else if (x[i].includes('@')) {
+                    fullBags++
+                }
+            }
+            if (hasDog === true) {
+                return "Dog!!"
+            } else if (fullBags > cap) {
+                return "Cr@p"
+            } else {
+                return "Clean"
+            }
+        }
+    </script>
+</body>
+
+</html>

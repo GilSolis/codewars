@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        function olympicRing(str) {
+            let circles = 0
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] == 'A' || str[i] == 'a' || str[i] == 'o' || str[i] == 'O' || str[i] == 'e' || str[i] == 'b' || str[i] == 'p' || str[i] == 'P' || str[i] == 'd' || str[i] == 'D' || str[i] == 'R' || str[i] == 'g' || str[i] == 'q' || str[i] == 'Q') {
+                    circles += 1
+                } else if (str[i] == "B") {
+                    circle += 2
+                }
+            }
+            return Math.floor(circles / 2) <= 1 ? "Not even a medal!" : Math.floor(circles / 2) == 2 ? "Bronze!" : Math.floor(circles / 2) == 3 ? "Silver!" : "Gold!"
+
+        }
+
+    </script>
+</body>
+
+</html>

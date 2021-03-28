@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function wallpaper(l, w, h) {
+            let numRolls = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
+            const roll = 5.2
+            let area = ((l + w) * h) * 2
+
+            return (l === 0 || w === 0) ? numRolls[0] : numRolls[Math.ceil((area * 1.15) / roll)]
+
+
+        }
+    </script>
+</body>
+
+</html>

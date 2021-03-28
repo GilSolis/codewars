@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function dateNbDays(a0, a, p) {
+            let days = 0
+            let interestRate = p / 36000
+            let date = new Date('2016-01-01')
+
+            while (a0 < a) {
+                days++
+                a0 += a0 * interestRate
+            }
+
+            date.setDate(date.getDate() + days)
+            console.log(date.setDate(date.getDate() + days))
+            console.log(date.toISOString().split('T')[0])
+
+        }
+        dateNbDays(4281, 5087, 2)
+    </script>
+</body>
+
+</html>

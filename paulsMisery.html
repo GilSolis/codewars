@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+function paul(x){
+let values = {'kata':5, 'Petes kata':10, 'life':0,"eating":1}
+let score = x.reduce((acc, cv)=> acc +=  values[cv], 0)
+return score < 40 ? 'Super happy!' : score<70 ? 'Happy!' : score < 100 ? 'Sad!' : 'Miserable!'
+
+}
+
+paul(['life', 'eating', 'life'])
+
+    </script>
+</body>
+</html>

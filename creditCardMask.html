@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// solution 1
+function maskify(cc) {
+let newArr =  cc.split('')
+if(cc.length<4) return cc
+for(let i = 0;i<newArr.length-4;i++){
+    newArr[i] = "#"
+}
+return newArr.join()
+
+return cc.length < 4 ? cc : '#'.repeat(cc.length -4) + cc.slice(-4)
+
+}
+
+// solution 2
+
+function maskify(cc){
+
+    return cc.length < 4 ? cc : '#'.repeat(cc.length -4) + cc.slice(-4)
+}
+
+// solution 3
+
+const maskify = cc => cc.length < 4 ? cc : '#'.repeat(cc.length -4) + cc.slice(-4)
+
+    </script>
+</body>
+</html>

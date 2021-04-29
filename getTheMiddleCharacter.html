@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+function getMiddle(s)
+{
+if(s.length === 1) return s
+
+if(s.length%2 === 0){
+
+  return s.split('').slice((s.length/2)-1,(s.length/2)+1).join('')
+} else {
+  return s.split('').slice((s.length/2),(s.length/2)+1).join('')
+}
+  
+}
+
+//cleaned up solution
+
+const getMiddle = s => (s.length%2 === 0) ? s.split('').slice((s.length/2)-1,(s.length/2)+1).join('') : s.split('').slice((s.length/2),(s.length/2)+1).join('')
+
+
+</script>
+    
+</body>
+</html>

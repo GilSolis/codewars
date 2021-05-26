@@ -12,9 +12,24 @@
 
     <script>
 
-function alan(x){
+function planeSeat(a){
+  let number = parseInt(a)
+  if(number > 60) return "No Seat!!"
+  let letter = a.slice(-1)
+  if(letter == 'I' || letter == 'J') return 'No Seat!!'
+
+  let section
+  let cluster
+  
+section = (number<=20) ? "Front" : (number<=40) ? "Middle" :  "Back"
+cluster = (letter === 'A') || (letter === 'B') || (letter === 'C') ? "-Left" : (letter === 'D') || (letter === 'E') || (letter === 'F') ? '-Middle' : cluster = '-Right'
+
+return `${section}${cluster}`
+  
 
 }
+
+planeSeat('20b')
     </script>
 </body>
 </html>

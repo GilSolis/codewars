@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+function minPermutation(n) {
+        let num = n  
+          if(num <0)num =num*(-1)
+            
+        let numToString  = "" + num
+        let sorted = numToString.split('').sort()
+        let i = 0;
+
+        while(sorted[0] == 0){
+
+        let temp = sorted[0]
+    
+        i++
+        sorted[0] = sorted[i]
+
+        sorted[i] = temp
+  }
+          
+ return n < 0 ? +(sorted.join(''))*(-1) : +(sorted.join(''))
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+function swap(s, n){
+ 
+ let result = ""
+ let binary = (n).toString(2).split("")
+ let i = 0
+
+ for (let letter of s) {
+   if (letter.toLowerCase() != letter.toUpperCase()) {
+     if (binary[i] === "1") {
+       letter = letter.toLowerCase() === letter ? letter.toUpperCase() : letter.toLowerCase()
+     }
+     result += letter
+     i = i < binary.length - 1 ? ++i : 0
+   } else {
+     result += letter
+   }
+ }
+ return result
+}
+    </script>
+    
+</body>
+</html>

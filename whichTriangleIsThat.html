@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+var typeOfTriangle = function (sideA, sideB, sideC) {
+if (typeof sideA != 'number' || typeof sideB!='number' || typeof sideC!='number'|| sideA + sideB <= sideC ||sideA + sideC <= sideB || sideB + sideC <= sideA)  return "Not a valid triangle"   
+if(sideA === sideB && sideB === sideC ) return "Equilateral"
+if(sideA === sideB || (sideB === sideC) || (sideA === sideC) ) return 'Isosceles'
+return "Scalene"
+
+}
+    </script>
+</body>
+</html>

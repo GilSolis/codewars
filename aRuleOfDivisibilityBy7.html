@@ -50,7 +50,21 @@ seven(477557101) should return [28, 7]
 
 <script>
 
-
+function seven(m) {
+  let steps = 0;
+  let num = String(m)
+  
+  while ((num.length > 2)){
+      let lastDigit = num.charAt(num.length -1)    
+      
+      num = num.slice(0, -1) - (lastDigit*2)
+      num = String(num)
+      
+      steps++
+      
+  }
+return [+num,steps]
+}
 
 
 </script>

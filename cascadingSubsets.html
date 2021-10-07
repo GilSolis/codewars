@@ -26,7 +26,18 @@ each_cons([1,2,3,4], 3)
 
     <script>
 
+function eachCons(array, n) {
+        let arr = []
+        for(let i = 0; i<=array.length-n;i++){
+            let arrToPush = []
+            for(let j = 0; j<n;j++ ){
+                arrToPush.push(array[i+j])
+            }
+            arr.push(arrToPush)
+        }
 
+	    return arr;
+}
 
     </script>
 </body>

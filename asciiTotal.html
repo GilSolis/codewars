@@ -14,7 +14,13 @@
 
 uniTotal("a") == 97 uniTotal("aaa") == 291</p>
 
+<script>
 
+    function uniTotal (string) {
+    return string.split('').reduce((previous, current) => previous + current.charCodeAt(),0 )
+    }
+    
+    </script>
 
 </body>
 </html>

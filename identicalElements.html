@@ -14,5 +14,18 @@
     <p>
         Your code must handle any value within the range of a 32-bit integer, and must be capable of handling either array being empty (which is a false result, as there are no duplicated elements). 
     </p>
+
+    <script>
+        function duplicateElements(m, n) {
+        for(let i = 0; i< m.length;i++){
+            for(let j = 0; j < n.length, j++){
+                if(m[i]===n[j]){
+                    return true
+                }
+            }
+        }
+        return false
+}
+    </script>
 </body>
 </html>

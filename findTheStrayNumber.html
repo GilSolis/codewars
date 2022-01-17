@@ -18,6 +18,20 @@ Examples
 [1, 1, 2] ==> 2
 [17, 17, 3, 17, 17, 17, 17] ==> 3
     </p>
+
+    <script>
+        function stray(numbers) {
+            const hash = {}
+
+        for(const num of numbers){
+            hash[num] = hash[num] + 1 || 1
+        }
+
+        for(const num in hash){
+            if(hash[num] === 1) return +num
+        }
+}
+    </script>
     
 </body>
 </html>

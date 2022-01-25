@@ -20,7 +20,20 @@
 
         
 <script>
-    
+    function shortcut (string) {
+  let newString = ''
+  let arr = string.split('')
+  let vowels = 'aeiou'
+  for(let i = 0; i<=arr.length-1; i++){
+      console.log(arr[i])
+      if(!vowels.includes(arr[i])){
+          newString = newString + arr[i]
+      }
+  }
+  return newString
+}
+
+shortcut('taco')
 </script>
 
 

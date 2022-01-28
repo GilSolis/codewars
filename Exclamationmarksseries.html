@@ -18,7 +18,19 @@ remove("!Hi!") === "!Hi"
 remove("Hi! Hi!") === "Hi! Hi"
 remove("Hi") === "Hi"
 <script>
-
+function remove (string) { 
+  let arr = string.split()
+  
+  for(let i = arr.length+1; i >= 0; i--){
+    if(arr[i] === '!'){
+      string = string.substring(0, string.length - 1)
+    }else{
+      return string
+    }
+  }
+//   return '';
+}
+function remove("Hello!")
 
 </script>
 

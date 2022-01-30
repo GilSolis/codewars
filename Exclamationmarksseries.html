@@ -30,6 +30,19 @@ function remove (string) {
     
 }
 
+function removeAlternative(string){
+  let arr = string.split('')
+  let reverseArr = arr.reverse()
+  for(let i = 0; i < arr.length; i++){
+    if(reverseArr[i]=== '!'){
+      reverseArr.shift()
+      i--
+    }else{
+      return reverseArr.reverse().join('')
+    }
+}
+}
+removeAlternative('Hello!')
 
 </script>
 

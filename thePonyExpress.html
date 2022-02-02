@@ -18,7 +18,10 @@
     </p>
 
     <script>
-        
+function riders(stations) {
+  return Math.ceil(stations.reduce((previousValue,currentValue)=>previousValue+currentValue)/100)
+}
+
     </script>
     
 </body>

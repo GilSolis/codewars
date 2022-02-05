@@ -22,7 +22,28 @@
     </p>
 
     <script>
+
+    function validateWord(s)
+    
+    {let newStr = s.toLowerCase()
+        const hash = {}
+        for(const char of newStr){
+            hash[char] = hash[char] + 1 || 1
+        }
+        let count = hash[Object.keys(hash)[0]]
+
+        let valid = true
         
+        for(const value in hash){
+            console.log(hash[value])
+            if(!(hash[value] === count)) {valid = false}
+            console.log(valid)
+        }
+
+        return valid
+    }
+   validateWord('Abcabc')
+
     </script>
     
 </body>

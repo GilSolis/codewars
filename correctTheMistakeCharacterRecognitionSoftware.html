@@ -29,6 +29,10 @@
    
 <script>
 
+function correct(string)
+{
+    return string.split('').map(element => element === '5' ? 'S' : element === '0' ? 'O' : element === '1' ? 'I' : element ).join('')
+}
 
 
 

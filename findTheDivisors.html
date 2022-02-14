@@ -16,4 +16,20 @@
     <p>divisors(25); // should return [5]</p>
     <p>divisors(13); // should return "13 is prime"</p>
 </body>
+
+<script>
+function divisors(integer) {
+    let isPrime = true;
+    let answer = []
+    for(let i = 2; i< integer; i++){
+        if(integer % i === 0){
+            isPrime = false
+            answer.push(i)
+        }
+    }
+    return isPrime ? `${integer + ' is prime'}` : answer
+  
+};
+
+</script>
 </html>

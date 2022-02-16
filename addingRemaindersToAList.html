@@ -27,5 +27,11 @@ nums = [1000, 999, 998, 997], div = 5
 nums = [], div = 2
    ==> []
     </p>
+
+    <script>
+        function solve(nums, div) {
+  return nums.map(num => num < div ? num + num: num + (num % div))
+}
+    </script>
 </body>
 </html>

@@ -28,5 +28,11 @@
         </section>
             
     
+
+        <script>
+            function sortByBinaryOnes(list){
+ return list.sort((a, b) => b.toString(2).replace(/0/g, ``).length - a.toString(2).replace(/0/g, ``).length || a - b );
+}
+        </script>
 </body>
 </html>

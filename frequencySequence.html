@@ -23,7 +23,7 @@
             let hash = {}
             str.split('').forEach(el => hash[el] = hash[el] + 1 || 1)
             str.split('').forEach(el => answer += hash[el] + sep)
-            console.log(answer.slice(0,-1))
+            return answer.slice(0,-1)
         }
 
         freqSeq("hello world", '-')

@@ -17,6 +17,23 @@
 <li>tripleX("softX kitty, warm kitty, xxxxx") → true</li>
 <li>tripleX("softx kitty, warm kitty, xxxxx") → false</li>
 
+<script>
+    function tripleX(str){
+        let firstX = false
+        for(let i = 0; i < str.length; i++){
+            if(str(i) === 'x' && !firstx){
+                firstX = true
+                if(str(i+1) === 'x' && str(i+2) === 'x'){
+                    return true
+                }
+            }
+        }
+        return false
+  
+}
+
+</script>
+
 
 </body>
 </html>

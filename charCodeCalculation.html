@@ -27,6 +27,20 @@
     </span>
 
 
+    <script>
+        function calc(x){
+            let total1 = ''
+            for(let i = 0; i< x.length; i++){
+                total1 += x[i].charCodeAt()
+            }
+            let total2 = total1.replace(/7/g,'1')
+            let diff1 = total1.split('').reduce((sum, cur) => sum + +cur, 0);
+             let diff2 = total2.split('').reduce((sum, cur) => sum + +cur, 0);
+            return diff1 - diff2
+}
+
+calc('ABC')
+    </script>
     
 </body>
 </html>

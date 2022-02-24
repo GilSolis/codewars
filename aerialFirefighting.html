@@ -32,6 +32,19 @@
     <li>"xxYxx" and w = 1      -->  4</li>
     <li>"xxxxYxYx" and w = 5   -->  3</li>
     <li>"xxxxxYxYx" and w = 2  -->  5</li>
+
+    <script>
+         function waterbombs(fire, w) {
+             let arr = fire.split('Y')
+             let total = 0
+            for(item of arr){
+                total += Math.ceil(item.length / w)
+            }
+            return total
+ }
+
+ waterbombs('xxxxxYxYx', 2)
+    </script>
     
 </body>
 </html>

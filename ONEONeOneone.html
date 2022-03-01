@@ -20,7 +20,21 @@
     <li>consecutiveOnes([0, 0, 0, 0, 0]) === 0</li>
 
     <script>
-
+        function consecutiveOnes(nums) {
+            let most = 0
+            let currentCount = 0
+            for(let i = 0; i < nums.length; i++){
+                if(nums[i] === 1){
+                    currentCount++
+                  if(currentCount > most) {
+                       most = currentCount;}
+                  
+                }else {
+                  currentCount = 0
+                }
+            }
+            return most
+};
     </script>
     
     </body>

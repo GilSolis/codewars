@@ -15,5 +15,17 @@
     <li style='list-style: none;'>, [ 20, 21, 34, 56, 100 ]  #  minimum value of row is 20</li>
 
     <P>So the function should return 26 because the sum of the minimums is 1 + 5 + 20 = 26.</P>
+
+
+    <script>
+        function sumOfMinimums(arr) {
+        let sum = 0
+        for(const array of arr){
+            sum += Math.min(...array)
+        }
+        return sum
+        
+}
+    </script>
 </body>
 </html>
